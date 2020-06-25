@@ -38,9 +38,7 @@
     opacity: 0;
   }
 }
-body {
-  font-size: 0.9rem;
-}
+
 .page-wrapper .sidebar-wrapper,
 .sidebar-wrapper .sidebar-brand > a,
 .sidebar-wrapper .sidebar-dropdown > a:after,
@@ -103,11 +101,10 @@ body {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
-  width: 260px;
+  width: 12%;
   height: 100%;
   max-height: 100%;
   position: fixed;
-  top: 0;
   left: -300px;
   z-index: 999;
 }
@@ -240,23 +237,6 @@ body {
   animation: swing ease-in-out 0.5s 1 alternate;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f105";
-  font-style: normal;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background: 0 0;
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
   padding: 5px 0;
@@ -267,19 +247,7 @@ body {
   font-size: 13px;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  font-style: normal;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-right: 10px;
-  font-size: 8px;
-}
+
 
 .sidebar-wrapper .sidebar-menu ul li a span.label,
 .sidebar-wrapper .sidebar-menu ul li a span.badge {
@@ -477,4 +445,26 @@ body {
 
 .chiller-theme .sidebar-footer>a:last-child {
     border-right: none;
+}
+
+.test {
+  margin-left: 12%;
+  width: 0;
+}
+
+.pullout-active {
+  margin-left: 12%;
+  width: 12%;
+}
+
+.active-submenu {
+  display: block; 
+}
+
+.inactive-submenu {
+  display: none;
+}
+
+#sidebar2 {
+  background: blue;
 }
